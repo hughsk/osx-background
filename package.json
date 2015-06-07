@@ -1,12 +1,12 @@
 {
   "name": "osx-background",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Get and set your OSX desktop background image programmatically",
   "main": "index.js",
   "dependencies": {
-    "NodObjC": "~0.0.15"
+    "ffi": "1.3.x",
+    "nodobjc": "2.0.x"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
