@@ -27,7 +27,7 @@ function setBackground(location) {
     'options',
     workspace('desktopImageOptionsForScreen', mainScreen)('mutableCopy'),
     'error',
-    ffi.NULL_POINTER
+    $.alloc($.NSError).ref()
   );
 }
 
