@@ -21,13 +21,13 @@ function setBackground(location) {
 
   return !!workspace(
     'setDesktopImageURL',
-    $.NSURL('URLWithString', $('file://localhost/' + path.resolve(location))),
+      $.NSURL('URLWithString', $('file://localhost/' + path.resolve(location))),
     'forScreen',
-    mainScreen,
+      mainScreen,
     'options',
-    workspace('desktopImageOptionsForScreen', mainScreen)('mutableCopy'),
+      workspace('desktopImageOptionsForScreen', mainScreen)('mutableCopy'),
     'error',
-    $.alloc($.NSError).ref()
+      $.alloc($.NSError).ref()
   );
 }
 
